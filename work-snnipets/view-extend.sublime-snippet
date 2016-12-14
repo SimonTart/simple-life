@@ -1,11 +1,13 @@
 <snippet>
     <content><![CDATA[
 var ${1:child}View = ${2:parent}.extend({
+    template: __inline("$3"),
     initialize: function(){
         $2.prototype.initialize.apply(this,arguments);
-    }$3
+    }$4
 });
-${4:return $1View;}
+
+${5:return $1View;}
 ]]></content>
      <tabTrigger>view.extend</tabTrigger>
      <scope>source.js</scope>

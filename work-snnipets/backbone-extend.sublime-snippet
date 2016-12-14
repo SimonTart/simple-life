@@ -5,6 +5,7 @@ var ${1:child} = ${2:parent}.extend({
         $2.prototype.initialize.apply(this,arguments);
     }
 });
+
 ${3:return $1;}
 ]]></content>
      <tabTrigger>extend</tabTrigger>

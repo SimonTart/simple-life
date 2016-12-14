@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-var ${1:child}View = ${2:parent}View.extend({
+var ${1:child}View = ${2:parent}.extend({
     initialize: function(){
         $2.prototype.initialize.apply(this,arguments);
     }$3

@@ -1,0 +1,102 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+'.source.js':
+    'extendParent':
+      'prefix':'extend'
+      'body':"""
+      var ${1:child} = ${2:parent}.extend({
+        initialize: function(){
+            ${2:parent}.prototype.initialize.apply(this,arguments);
+        }
+      });
+
+      ${3:return $1;}
+      """
+
+    'extendCollection':
+      'prefix':'collection.extend'
+      'body':"""
+      var ${1:name}Collection = Backbone.Collection.extend({
+          model:$2
+      });
+
+      ${3:return $1Collection;}
+      """
+
+    'extendModel':
+      'prefix':'model.extend'
+      'body':"""
+      var ${1:name}Model = Backbone.Model.extend({
+          $2
+      });
+
+      ${3:return $1Model;}
+      """
+
+    'requireAbsView':
+      'prefix':'rabs'
+      'body':"""
+      var AbsView = require("common:widget/base/absview/absview.js");
+      """
+
+    'requireBackbone':
+      'prefix':'rb'
+      'body':"""
+      var Backbone = require("common:components/backbone/backbone.js");
+      """
+
+    'requireHashRouter':
+      'prefix':'rhash'
+      'body':"""
+      var HashRouter = require("common:widget/base/hashrouter/hashrouter.js");
+      """
+
+    'requirejQuery':
+      'prefix':'rj'
+      'body':"""
+      var \$ = require("common:components/jquery/jquery.js");
+      """
+
+    'requireUnderscore':
+      'prefix':'ru'
+      'body':"""
+      var _ = require("common:components/underscore/underscore.js");
+      """
+
+    '<%%>':
+      'prefix':'<%'
+      'body':"""
+      <%$1 %>
+      """
+
+    'extendView':
+      'prefix':'view.extend'
+      'body':"""
+      var ${1:child}View = ${2:parent}.extend({
+          template: __inline("$3"),
+          initialize: function(){
+              ${2:parent}.prototype.initialize.apply(this,arguments);
+          }$4
+      });
+
+      ${5:return $1View;}
+      """

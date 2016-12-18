@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-var _ = require("common:components/underscore/underscore.js");
-]]></content>
-     <tabTrigger>ru</tabTrigger>
-     <scope>source.js</scope>
-     <description>requireUnderscore</description>
- </snippet>

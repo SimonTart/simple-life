@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-var AbsView = require("common:widget/base/absview/absview.js");
-]]></content>
-     <tabTrigger>rabs</tabTrigger>
-     <scope>source.js</scope>
-     <description>requireAbsView</description>
- </snippet>

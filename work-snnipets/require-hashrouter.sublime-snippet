@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-var HashRouter = require("common:widget/base/hashrouter/hashrouter.js");
-]]></content>
-     <tabTrigger>rhash</tabTrigger>
-     <scope>source.js</scope>
-     <description>requireHashRouter</description>
- </snippet>

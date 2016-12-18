@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+var Backbone = require("common:components/backbone/backbone.js");
+]]></content>
+     <tabTrigger>rb</tabTrigger>
+     <description>requireBackbone</description>
+     <scope>source.js</scope>
+ </snippet>

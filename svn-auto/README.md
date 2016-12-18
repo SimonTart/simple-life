@@ -1,5 +1,5 @@
 ### svn-auto
-基于node实现的快速提交svn脚本。通过脚本可以快速提交代码，但是提交之前会自动根据`svn status`进行`git add`,`git delete`命令，把新增文件或文件夹添加到版本控制中，把删除的文件或文件夹移除。
+基于node实现的快速提交svn脚本。通过脚本可以快速提交代码，但是提交之前会自动根据`svn status`进行`svn add`,`svn delete`命令，把新增文件或文件夹添加到版本控制中，把删除的文件或文件夹移除。
 ### 使用
 使用之前你需要已经安装[node](https://nodejs.org/en/)。然后下载svn-auto.js到本地。因为有些公司提交代码是需要一定的后缀hook的，所以我在文件中已经预留。
 ```javascript

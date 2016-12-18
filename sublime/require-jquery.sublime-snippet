@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+var \$ = require("common:components/jquery/jquery.js");
+]]></content>
+     <tabTrigger>rj</tabTrigger>
+     <scope>source.js</scope>
+     <description>requirejQuery</description>
+ </snippet>

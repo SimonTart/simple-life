@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<%$1 %>
+]]></content>
+     <tabTrigger><![CDATA[<%]]></tabTrigger>
+     <scope>text.html,source.tmpl</scope>
+     <description><![CDATA[
+        <% %>
+]]></description>
+ </snippet>

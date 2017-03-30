@@ -1,5 +1,5 @@
 test2_commit
-test2_commit2
+>>>>>>> parent of 66c0ddd... test2-commit
 ### Simple Life
 这个项目主要是目前一些自己在Mac上为了让生活和工作更加简便写的一些小的配置或者一些小的脚本
 
